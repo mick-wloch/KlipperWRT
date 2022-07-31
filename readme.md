@@ -2,7 +2,15 @@ Installation of KlipperWRT on GL.iNet GL-MT300N V2
 
 # Device Prep
 
+Start with OpenWRT 21.02.3 built from: 
+
+        https://firmware-selector.openwrt.org/?version=21.02.3&target=ramips%2Fmt76x8&id=glinet_gl-mt300n-v2
+
+You can install the first few packages or use opkg. No Luci is key. Can use Luci version to configure device, copy wireless and network config files off then install the build from above.
+
 ## EXTFS
+
+Extend the local disk space to an external device. USB drives listed as sda1.
     
     opkg update && opkg install block-mount kmod-fs-ext4 kmod-usb-storage kmod-usb-ohci kmod-usb-uhci e2fsprogs fdisk
 
@@ -37,7 +45,7 @@ Installation of KlipperWRT on GL.iNet GL-MT300N V2
     swapon /overlay/swap.page
     mount -o remount,size=256M /tmp 
 
-    copy rc.local
+ Copy rc.local into /etc
 
 ## GIT AND GCC
 
