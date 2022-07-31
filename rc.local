@@ -1,0 +1,8 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+###activate the swap file on the SD card  
+swapon /overlay/swap.page  
+
+###expand /tmp space  
+mount -o remount,size=256M /tmp  
+exit 0
