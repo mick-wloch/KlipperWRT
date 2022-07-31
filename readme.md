@@ -8,7 +8,7 @@ Start with OpenWRT 21.02.3 built from:
 
 You can install the first few packages or use opkg. No Luci is key. Can use Luci version to configure device, copy wireless and network config files off then install the build from above.
 
-## EXTFS
+## extroot
 
 Extend the local disk space to an external device. USB drives listed as sda1.
     
