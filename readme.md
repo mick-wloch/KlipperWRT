@@ -6,7 +6,7 @@ Start with OpenWRT 21.02.3 built from:
 
         https://firmware-selector.openwrt.org/?version=21.02.3&target=ramips%2Fmt76x8&id=glinet_gl-mt300n-v2
 
-You can install the first few packages or use opkg. No Luci is key. Can use Luci version to configure device, copy wireless and network config files off then install the build from above.
+No Luci is key. You can install the first few packages or use opkg.  Can use Luci version to configure device, then copy the wirelss and network files.
 
 ## extroot
 
