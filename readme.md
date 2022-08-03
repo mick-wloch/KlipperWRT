@@ -115,9 +115,13 @@ Extend the local disk space to an external device. USB drives listed as sda1.
     /etc/init.d/moonraker enable
     /etc/init.d/moonraker restart 
 
-# MORE NGINX
+# MORE NGINX and MDNS
 
     wget -q -O /etc/nginx/conf.d/upstreams.conf https://raw.githubusercontent.com/ihrapsa/KlipperWrt/main/nginx/upstreams.conf
     wget -q -O /etc/nginx/conf.d/common_vars.conf https://raw.githubusercontent.com/ihrapsa/KlipperWrt/main/nginx/common_vars.conf
-
+   
+    opkg update && opkg install avahi-daemon-service-ssh avahi-daemon-service-http
+    reboot
+    
+Change hostname in etc/config/system
 
