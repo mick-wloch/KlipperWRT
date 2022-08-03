@@ -91,7 +91,8 @@ Extend the local disk space to an external device. USB drives listed as sda1.
 
 
 # KLIPPER
-
+    
+    mkdir ~/klipper_config ~/klipper_logs ~/gcode_files
     git clone https://github.com/KevinOConnor/klipper.git
 
     wget -q -O /etc/init.d/klipper https://raw.githubusercontent.com/ihrapsa/KlipperWrt/main/Services/klipper
