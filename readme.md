@@ -12,7 +12,7 @@ No Luci is key. You can install the first few packages or use opkg.  Can use Luc
 
 Extend the local disk space to an external device. USB drives listed as sda1.
     
-    opkg update && opkg install block-mount kmod-fs-ext4 kmod-usb-storage kmod-usb-ohci kmod-usb-uhci e2fsprogs fdisk
+    opkg update && opkg install block-mount kmod-fs-ext4 kmod-usb-storage kmod-usb-ohci kmod-usb-uhci e2fsprogs fdisk kmod-usb-serial-ch341 kmod-usb-acm
 
     DEVICE="$(sed -n -e "/\s\/overlay\s.*$/s///p" /etc/mtab)"
     uci -q delete fstab.rwm
