@@ -1,4 +1,5 @@
 Installation of KlipperWRT on GL.iNet GL-MT300N V2
+based on https://github.com/ihrapsa/KlipperWrt
 
 # Device Prep
 
